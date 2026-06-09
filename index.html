@@ -721,10 +721,19 @@
 
     // ── VIDEO PLACEHOLDER HIDE ──
     document.querySelectorAll('.video-frame video').forEach(v => {
+      // Hide placeholder when video can play
       v.addEventListener('canplay', () => {
         const ph = v.nextElementSibling;
         if (ph) { ph.style.opacity = '0'; ph.style.pointerEvents = 'none'; }
       });
+      // Force hide placeholder after 2 seconds regardless
+      setTimeout(() => {
+        const ph = v.nextElementSibling;
+        if (ph) { ph.style.opacity = '0'; ph.style.pointerEvents = 'none'; }
+      }, 2000);
+      // Force the video to load and play
+      v.load();
+      v.play().catch(() => {});
     });
 
     // ── SCROLL REVEAL ──
