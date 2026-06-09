@@ -703,20 +703,29 @@
 
     setInterval(() => {
       qi = (qi + 1) % quotes.length;
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(-10px) scale(0.97)';
-      card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      const textEl = card.querySelector('.q-text');
+      const authorEl = card.querySelector('.q-author');
+    
+      textEl.style.transition = 'opacity 0.8s ease';
+      authorEl.style.transition = 'opacity 0.8s ease';
+      tagEl.style.transition = 'opacity 0.8s ease';
+    
+      textEl.style.opacity = '0';
+      authorEl.style.opacity = '0';
+      tagEl.style.opacity = '0';
+    
       setTimeout(() => {
         const q = quotes[qi];
-        card.querySelector('.q-text').textContent = q.text;
-        card.querySelector('.q-author').textContent = q.author;
+        textEl.textContent = q.text;
+        authorEl.textContent = q.author;
         tagEl.textContent = q.tag;
         pips.forEach((p, i) => p.classList.toggle('active', i === qi));
-        card.style.opacity = '1';
-        card.style.transform = 'translateY(0) scale(1)';
-        setTimeout(() => { card.style.transition = ''; }, 400);
-      }, 320);
-    }, 3800);
+    
+        textEl.style.opacity = '1';
+        authorEl.style.opacity = '1';
+        tagEl.style.opacity = '1';
+      }, 850);
+    }, 4500);
 
     // ── VIDEO PLACEHOLDER HIDE ──
     document.querySelectorAll('.video-frame video').forEach(v => {
