@@ -1,5 +1,5 @@
 # Privacy Policy
-Last updated: [02 August 2025]
+Last updated: [22 June 2026]
 
 ## Introduction
 
@@ -7,7 +7,7 @@ Welcome to **Memori Note**!
 
 **Your privacy is our priority.**  
 Memori Note does **not access, collect, or store your notes** — everything you create stays securely on your device.  
-This Privacy Policy explains what minimal information we do collect (such as anonymous usage events) and how we use it to improve the app experience.
+This Privacy Policy explains what minimal technical information we collect via third-party services (such as anonymous usage events and device performance logs) and how it is used to maintain and improve the App.
 
 
 By using Memori Note, you agree to the practices described in this policy.
@@ -21,7 +21,9 @@ If you have any questions, please contact us at:
 
 We collect minimal, non-personal data to improve app performance and ensure a smooth user experience:
 
-- **Usage Analytics**: We log anonymous usage events (such as when a user taps the "Start Trial" button) to help us improve features and debug issues. These analytics are non-personal and do not include your notes or any private content.
+- **Usage Analytics** & Device Identifiers: We use third-party tools to log anonymous usage events (e.g., accessing premium feature screens, feature engagement) and basic device information (e.g., device model, operating system version, and anonymous installation identifiers). These analytics do not include, access, or look at your notes or private content.
+
+- **Purchase History Metadata**: When you subscribe or make a purchase, the transaction is processed securely by the Apple App Store or Google Play Store. We receive anonymous transaction metadata (such as transaction IDs, expiration dates, and subscription status) to unlock your premium features. We never see or collect your payment details, credit card numbers, or billing name.
 
 ---
 
@@ -36,10 +38,9 @@ We use collected data strictly for the following purposes:
 
 ## Data Sharing
 
-We **do not share** any of your personal data or note content with third parties.
+We **do not sell** your data, and we do not share your information with third parties for marketing purposes. We only share anonymized technical data with trusted service providers to run the App:
 
-- We use **Firebase Analytics** to collect anonymous app usage data (e.g. feature taps).
-- Firebase does **not** access your notes or store personal content.
+- **Google Firebase (Analytics & Crashlytics)**: We use Firebase to collect anonymous performance metrics and feature usage events to help us optimize the App and fix crashes. Firebase processes this data securely in accordance with Google's Privacy Policy. You can learn more about how Google handles data here: Google Privacy & Terms.
 
 ---
 
@@ -80,7 +81,7 @@ Only anonymous app events (like button taps) are sent securely to Firebase Analy
 
 ## Children’s Privacy
 
-Memori Note is **not intended for children under the age of 13**.  
+Memori Note is a general audience app and is **not directed to children under the age of 13 (or 16 in certain jurisdictions).**
 We do not knowingly collect personal information from children.  
 If you believe a child has provided us with personal information, please contact us so we can delete it immediately.
 
