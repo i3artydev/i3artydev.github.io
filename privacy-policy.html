@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Memori Note</title>
+<meta name="description" content="How Memori Note handles your notes, your account and your data.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1f;
+    --muted: #5b5b66;
+    --rule: #e3e3ea;
+    --accent: #4c6ef5;
+    --card: #f7f7fa;
+    --warn-bg: #fff4cc;
+    --warn-fg: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141a;
+      --fg: #e9e9f0;
+      --muted: #a0a0ad;
+      --rule: #2c2c36;
+      --accent: #8fa5ff;
+      --card: #1d1d25;
+      --warn-bg: #4a3a00;
+      --warn-fg: #ffe08a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--rule); margin-bottom: 36px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.25rem; line-height: 1.3; margin: 44px 0 12px;
+    letter-spacing: -0.01em; padding-top: 10px; border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.02rem; margin: 26px 0 8px; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: 0.94rem; margin: 0; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 7px 0; }
+  .summary {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 20px 22px; margin: 28px 0;
+  }
+  .summary h2 { margin-top: 0; border-top: 0; padding-top: 0; font-size: 1.05rem; }
+  .summary ul { margin-bottom: 0; }
+  .key { font-weight: 600; }
+  .todo {
+    background: var(--warn-bg); color: var(--warn-fg); font-weight: 700;
+    padding: 1px 6px; border-radius: 4px; white-space: nowrap;
+  }
+  .tablewrap { overflow-x: auto; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Memori Note · Last updated 7 August 2026</p>
+</header>
+
+<p>This policy explains what Memori Note does with your information — what stays on your
+device, what is sent to our service providers, and how to get rid of all of it.</p>
+
+<p>Memori Note is provided by Bartek Rajchel,
+130 Westmorland Ave, Luton, LU3 2PT, United Kingdom. For anything in this policy you can reach us at
+<a href="mailto:i3arty.dev@gmail.com">i3arty.dev@gmail.com</a>.
+For the purposes of the UK and EU GDPR we are the data controller for the information described below.</p>
+
+<div class="summary">
+  <h2>The short version</h2>
+  <ul>
+    <li>You can use the whole app <span class="key">without creating an account</span>.</li>
+    <li>Your notes are stored <span class="key">on your device</span>. They are only copied to the
+      cloud if you have a premium subscription <span class="key">and</span> you switch sync on yourself.</li>
+    <li><span class="key">Locked notes are never uploaded</span>, under any circumstances.</li>
+    <li>We do not read, sell, or use your notes for advertising or for training AI models.</li>
+    <li>Synced notes are <span class="key">not end-to-end encrypted</span>. Please don't store
+      passwords or financial details in them.</li>
+    <li>You can delete your account and everything in the cloud from inside the app, at any time.</li>
+  </ul>
+</div>
+
+<h2>1. Using Memori Note without an account</h2>
+
+<p>An account is optional. If you never create one, your notes stay on your device and are never
+uploaded to us.</p>
+
+<p>When you first open the app we create an <span class="key">anonymous identifier</span> through
+Firebase Authentication. This is a random string. It is not linked to your name, your email address
+or your device's advertising identifier, and it exists so that your subscription can be recognised on
+your device. You do not need to sign in for this and you are not asked for any information.</p>
+
+<h2>2. Accounts and signing in</h2>
+
+<p>If you choose to create an account — which is free and optional — we process:</p>
+
+<ul>
+  <li>your <span class="key">email address</span>;</li>
+  <li>whether that address has been verified;</li>
+  <li>if you sign in with Google or Apple, the account identifier and email address that provider
+    shares with us.</li>
+</ul>
+
+<p>Passwords are handled entirely by Firebase Authentication. We never see them and cannot retrieve
+them. We send you an email to confirm your address; until you confirm it, sync stays switched off.</p>
+
+<p>An account is only needed if you want note sync or the web app.</p>
+
+<h2>3. Your notes and cloud sync</h2>
+
+<p>Your notes live on your device. If you have an active premium subscription <span class="key">and</span>
+you turn on <em>Sync your notes</em> in Settings, the notes you have not locked are also copied to
+Google Cloud Firestore, so they stay in step across your devices and can be opened in the web app.</p>
+
+<h3>What is uploaded for each synced note</h3>
+
+<p>The title; the note text and its formatting; labels; colour; whether it is pinned, archived or in
+the trash; reminder date, time and repeat settings; and the timestamps used to work out which version
+is most recent.</p>
+
+<p>Notes are stored under a location tied to your account identifier, and our security rules permit
+only your own account to read or write them.</p>
+
+<p>They are held in Google Cloud Firestore in Google's <code>nam5</code> multi-region location, which
+means <span class="key">your synced notes are stored on servers in the United States</span>,
+regardless of where you live. Google replicates the data across several US data centres for
+resilience. See <a href="#transfers">international transfers</a> below.</p>
+
+<h3>Sync is optional and off by default</h3>
+
+<p>Nothing is uploaded until you turn it on. Turning it off stops any further uploads.</p>
+
+<h3>Locked notes are never uploaded</h3>
+
+<p>Notes you lock with a PIN or biometric unlock stay on the device where you locked them. If you
+lock a note that had already been synced, the copy in the cloud is replaced with an empty deletion
+marker the next time the app syncs, so the text does not remain there.</p>
+
+<h3>We do not use end-to-end encryption</h3>
+
+<p>Synced notes are encrypted in transit and encrypted at rest by Google, but they are not encrypted
+with a key that only you hold. Please do not store passwords, financial details or other highly
+sensitive information in notes you sync.</p>
+
+<h3>If you sign in with a different account on the same device</h3>
+
+<p>Notes downloaded under one account are not uploaded to a different account. They do, however,
+remain visible on that device until you delete them or remove the app. If you share a device, bear
+this in mind.</p>
+
+<h2>4. Note locking and your PIN</h2>
+
+<p>If you set a PIN for note locking, we never receive it. It is not stored anywhere as text: the app
+keeps a random per-install salt and a PBKDF2-HMAC-SHA256 hash derived from your PIN, held in your
+device's secure storage (Android Keystore or iOS Keychain).</p>
+
+<p>We cannot recover or reset your PIN. If you forget it, you lose access to your locked notes.</p>
+
+<p>Note locking is an access control inside the app, not encryption of the note itself. A locked note
+is stored on your device in the same way as any other note.</p>
+
+<h2>5. Subscriptions and purchases</h2>
+
+<p>Subscriptions are sold and processed by Google Play or the Apple App Store, and managed through
+RevenueCat. <span class="key">We never receive or store your payment card details.</span></p>
+
+<p>RevenueCat receives your account identifier (your Firebase Authentication user ID) together with
+purchase and entitlement information, so your subscription can be recognised on your devices and in
+the web app.</p>
+
+<h2>6. Advertising</h2>
+
+<p>The free version of Memori Note shows ads supplied by Google AdMob. AdMob may use device
+identifiers to select and measure ads. Your note content is never used for advertising and is never
+shared with advertisers. Premium removes ads.</p>
+
+<p>You can reset or limit ad personalisation in your device settings (Android:
+<em>Settings → Privacy → Ads</em>; iOS: <em>Settings → Privacy &amp; Security → Tracking</em>).</p>
+
+<h2>7. Analytics</h2>
+
+<p>We use Firebase Analytics to understand how the app is used in aggregate — which screens are
+opened, which features are used, crashes and performance. This is measured at the level of the app,
+<span class="key">not the content of your notes</span>. We never send note text, titles or reminder
+contents to analytics.</p>
+
+<h2>8. The web app</h2>
+
+<p>The Memori Note web app requires you to sign in and to have an active premium subscription. It
+reads and writes the same synced notes described above. Locked notes are never shown on the web.
+Subscriptions cannot be purchased through the web app.</p>
+
+<h2>9. Who processes data on our behalf</h2>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Provider</th><th>What they do</th><th>Their privacy policy</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Google — Firebase Authentication, Cloud Firestore, Firebase Analytics, Firebase Hosting</td>
+      <td>Accounts, synced note storage, usage analytics, hosting the web app</td>
+      <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a><br>
+          <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+    </tr>
+    <tr>
+      <td>Google AdMob</td>
+      <td>Advertising in the free version</td>
+      <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+    </tr>
+    <tr>
+      <td>RevenueCat</td>
+      <td>Subscription and entitlement management</td>
+      <td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td>
+    </tr>
+    <tr>
+      <td>Google Sign-In · Sign in with Apple</td>
+      <td>Optional ways to sign in</td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a><br>
+          <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
+    </tr>
+    <tr>
+      <td>Google Play · Apple App Store</td>
+      <td>Selling and billing subscriptions</td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a><br>
+          <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3 id="transfers">International transfers</h3>
+
+<p>Your synced notes are stored in the United States, and the providers above may process data
+outside your country. Where this involves transferring personal data out of the UK or EEA, the
+transfer relies on the European Commission's Standard Contractual Clauses — incorporated into
+Google's and RevenueCat's data processing terms — or an equivalent safeguard offered by the
+provider.</p>
+
+<p>If you would prefer your notes not to leave your device at all, simply leave
+<em>Sync your notes</em> switched off. Nothing is uploaded unless you turn it on.</p>
+
+<h2>10. How long we keep things</h2>
+
+<p>Notes you delete permanently are removed from your devices, and the cloud copy is replaced with an
+empty deletion marker so the deletion reaches your other devices.</p>
+
+<p>If your premium subscription ends, syncing stops. Notes already in the cloud are kept, unchanged,
+so they are still there if you subscribe again.</p>
+
+<p>Account records are kept while your account exists. When you delete your account, they go with it.</p>
+
+<h2>11. How to delete your data</h2>
+
+<p>In the app: <span class="key">Settings → Account → Delete account</span>. This permanently deletes
+your account and every note stored in the cloud.</p>
+
+<p>Without the app, or if you can no longer sign in: see our
+<a href="delete-account.html">account deletion page</a>, or email
+<a href="mailto:i3arty.dev@gmail.com">i3arty.dev@gmail.com</a> from
+your account's email address.</p>
+
+<p>Notes on your own device are not affected by account deletion — they stay yours. Delete the app or
+clear its data to remove those.</p>
+
+<h2>12. Your rights</h2>
+
+<p>If you are in the UK, the EEA, or another region with comparable law, you have the right to access
+your data, correct it, delete it, restrict or object to processing, and receive it in a portable
+form. Memori Note's built-in <span class="key">export to JSON or CSV</span> covers portability
+directly, and needs no request to us.</p>
+
+<p>Our legal bases: performing our contract with you (accounts, sync, subscriptions), your consent
+(analytics and personalised advertising, where consent is required), and our legitimate interests
+(keeping the service secure and preventing abuse).</p>
+
+<p>To exercise any of these rights, email
+<a href="mailto:i3arty.dev@gmail.com">i3arty.dev@gmail.com</a>. You can
+also complain to your local data protection authority — in the UK, the Information Commissioner's
+Office at <a href="https://ico.org.uk">ico.org.uk</a>.</p>
+
+<h2>13. Children</h2>
+
+<p>Memori Note is not directed at children under 13, and we do not knowingly collect their personal information. If you believe a child
+has created an account, contact us and we will delete it.</p>
+
+<h2>14. Changes to this policy</h2>
+
+<p>If we change this policy we will update the date at the top, and for significant changes we will
+tell you in the app before the change takes effect.</p>
+
+<h2>15. Contact</h2>
+
+<p><a href="mailto:i3arty.dev@gmail.com">i3arty.dev@gmail.com</a><br>
+Bartek Rajchel, 130 Westmorland Ave, Luton, LU3 2PT, United Kingdom</p>
+
+<footer>
+  <p><a href="index.html">Memori Note</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+  · <a href="delete-account.html">Delete your account</a></p>
+</footer>
+
+</div>
+</body>
+</html>

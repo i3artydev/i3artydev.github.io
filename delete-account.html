@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your account — Memori Note</title>
+<meta name="description" content="How to delete your Memori Note account and everything stored with it.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1f;
+    --muted: #5b5b66;
+    --rule: #e3e3ea;
+    --accent: #4c6ef5;
+    --card: #f7f7fa;
+    --danger: #c92a2a;
+    --danger-bg: #fff0f0;
+    --ok: #2b8a3e;
+    --ok-bg: #f0fbf2;
+    --warn-bg: #fff4cc;
+    --warn-fg: #6b4e00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141a;
+      --fg: #e9e9f0;
+      --muted: #a0a0ad;
+      --rule: #2c2c36;
+      --accent: #8fa5ff;
+      --card: #1d1d25;
+      --danger: #ff8787;
+      --danger-bg: #3a1a1a;
+      --ok: #8ce99a;
+      --ok-bg: #16301c;
+      --warn-bg: #4a3a00;
+      --warn-fg: #ffe08a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { padding: 56px 0 28px; border-bottom: 1px solid var(--rule); margin-bottom: 32px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 10px; letter-spacing: -0.02em; }
+  h2 {
+    font-size: 1.25rem; line-height: 1.3; margin: 40px 0 12px;
+    letter-spacing: -0.01em; padding-top: 10px; border-top: 1px solid var(--rule);
+  }
+  .meta { color: var(--muted); font-size: 0.94rem; margin: 0; }
+  a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 9px 0; }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li {
+    counter-increment: step; position: relative; padding-left: 42px; margin: 16px 0;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 1px;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-size: 0.9rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 20px 22px; margin: 22px 0;
+  }
+  .card h2 { margin-top: 0; border-top: 0; padding-top: 0; }
+  .box { border-radius: 10px; padding: 16px 20px; margin: 22px 0; border: 1px solid var(--rule); }
+  .box.gone { background: var(--danger-bg); border-left: 3px solid var(--danger); }
+  .box.kept { background: var(--ok-bg); border-left: 3px solid var(--ok); }
+  .box h3 { margin: 0 0 8px; font-size: 1rem; }
+  .box.gone h3 { color: var(--danger); }
+  .box.kept h3 { color: var(--ok); }
+  .box ul { margin: 0; }
+  .key { font-weight: 600; }
+  .todo {
+    background: var(--warn-bg); color: var(--warn-fg); font-weight: 700;
+    padding: 1px 6px; border-radius: 4px; white-space: nowrap;
+  }
+  .mail {
+    display: inline-block; background: var(--accent); color: #fff; text-decoration: none;
+    padding: 11px 20px; border-radius: 8px; font-weight: 600; margin-top: 6px;
+  }
+  footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Delete your Memori Note account</h1>
+  <p class="meta">Two ways to do it — in the app, or by email if you no longer have the app installed.</p>
+</header>
+
+<div class="card">
+  <h2>Option 1 — In the app (fastest)</h2>
+  <ol class="steps">
+    <li>Open <span class="key">Memori Note</span> on your phone.</li>
+    <li>Go to <span class="key">Settings → Account</span>.</li>
+    <li>Scroll to the bottom and tap <span class="key">Delete account</span>.</li>
+    <li>Confirm with your password, or by signing in again if you use Google or Apple.</li>
+  </ol>
+  <p style="margin-bottom:0">Deletion happens immediately. There is no waiting period and no
+  recovery — so export anything you want to keep first
+  (<span class="key">Settings → Export notes</span>).</p>
+</div>
+
+<div class="card">
+  <h2>Option 2 — By email</h2>
+  <p>If you've already removed the app, or you can't sign in, email us from
+  <span class="key">the address your account uses</span> so we can confirm it's you:</p>
+
+  <p><a class="mail" href="mailto:i3arty.dev@gmail.com?subject=Account%20deletion%20request">
+    i3arty.dev@gmail.com</a></p>
+
+  <p style="margin-bottom:0">Put <span class="key">&ldquo;Account deletion request&rdquo;</span> in
+  the subject. We'll confirm once it's done, normally within
+  7 days and always within 30.</p>
+</div>
+
+<h2>What gets deleted</h2>
+
+<div class="box gone">
+  <h3>Permanently deleted</h3>
+  <ul>
+    <li>Your Memori Note account and its sign-in details</li>
+    <li>Your email address</li>
+    <li><span class="key">Every note stored in the cloud</span> for your account</li>
+    <li>The link between your account and your subscription</li>
+  </ul>
+</div>
+
+<div class="box kept">
+  <h3>Not deleted — these stay with you</h3>
+  <ul>
+    <li><span class="key">Notes on your own device.</span> They remain in the app and are still
+      yours. To remove them, delete the app or clear its data in your device settings.</li>
+    <li><span class="key">Your subscription.</span> Deleting your account does not cancel billing.
+      Cancel separately in Google Play or the App Store, or you'll keep being charged.</li>
+    <li>Records we're required to keep by law, such as purchase records held by the app stores.</li>
+  </ul>
+</div>
+
+<h2>Cancel your subscription too</h2>
+
+<p>This is the step people miss. Account deletion and billing are separate systems — we can't cancel
+a subscription on your behalf.</p>
+
+<ul>
+  <li><span class="key">Android:</span> Google Play → profile icon → Payments &amp; subscriptions →
+    Subscriptions → Memori Note → Cancel</li>
+  <li><span class="key">iPhone / iPad:</span> Settings → your name → Subscriptions → Memori Note →
+    Cancel subscription</li>
+</ul>
+
+<h2>Before you go — save your notes</h2>
+
+<p>Deletion can't be undone. If you want a copy, export before you delete:
+<span class="key">Settings → Export notes</span>, which gives you a JSON or CSV file you can keep or
+import elsewhere.</p>
+
+<h2>Questions</h2>
+
+<p>Email <a href="mailto:i3arty.dev@gmail.com">i3arty.dev@gmail.com</a>
+and we'll help. See also our <a href="privacy-policy.html">Privacy Policy</a> for what we store and
+why.</p>
+
+<footer>
+  <p><a href="index.html">Memori Note</a> · <a href="privacy-policy.html">Privacy Policy</a>
+  · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></p>
+</footer>
+
+</div>
+</body>
+</html>
