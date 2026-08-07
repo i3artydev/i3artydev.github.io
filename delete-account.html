@@ -76,9 +76,11 @@
   .box { border-radius: 10px; padding: 16px 20px; margin: 22px 0; border: 1px solid var(--rule); }
   .box.gone { background: var(--danger-bg); border-left: 3px solid var(--danger); }
   .box.kept { background: var(--ok-bg); border-left: 3px solid var(--ok); }
+  .box.caution { background: var(--warn-bg); border-left: 3px solid var(--warn-fg); }
   .box h3 { margin: 0 0 8px; font-size: 1rem; }
   .box.gone h3 { color: var(--danger); }
   .box.kept h3 { color: var(--ok); }
+  .box.caution, .box.caution h3 { color: var(--warn-fg); }
   .box ul { margin: 0; }
   .key { font-weight: 600; }
   .todo {
@@ -98,7 +100,9 @@
 
 <header>
   <h1>Delete your Memori Note account</h1>
-  <p class="meta">Two ways to do it — in the app, or by email if you no longer have the app installed.</p>
+  <p class="meta">Two ways to do it — in the app, or by email if you no longer have the app
+  installed. You can also
+  <a href="#partial">delete individual notes without deleting your account</a>.</p>
 </header>
 
 <div class="card">
@@ -127,7 +131,27 @@
   7 days and always within 30.</p>
 </div>
 
-<h2>What gets deleted</h2>
+<h2 id="partial">Delete some of your data without deleting your account</h2>
+
+<p>You don't have to delete your whole account to remove your notes from our cloud storage.</p>
+
+<p><span class="key">Deleting a note removes it everywhere.</span> When you permanently delete a note
+— that is, delete it and then empty the trash — it is removed from this device, from your other
+devices, and from our cloud storage. The stored copy is replaced with an empty deletion marker
+containing no note content, which is what tells your other devices to remove their copy too.</p>
+
+<p>Do this for as many notes as you like, at any time. Your account, your email address and your
+subscription are untouched.</p>
+
+<div class="box caution">
+  <h3>One thing that surprises people</h3>
+  <p style="margin:0">Switching <span class="key">Sync your notes</span> off stops any further
+  uploads, but it does <span class="key">not</span> remove notes that are already stored in the
+  cloud — those are deliberately kept so they're still there if you turn sync back on later. If you
+  want them gone, delete the notes themselves, or delete your account.</p>
+</div>
+
+<h2>What gets deleted with your account</h2>
 
 <div class="box gone">
   <h3>Permanently deleted</h3>
